@@ -72,10 +72,10 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Alpha:"
         android:id="@+id/textView17"
-        android:layout_marginTop="33dp"
-        android:layout_below="@+id/textView22"
+        android:layout_below="@+id/switch1"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="56dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -109,53 +109,109 @@
         android:layout_alignRight="@+id/textView19"
         android:layout_alignEnd="@+id/textView19" />
 
-    <TextView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Rician with k:"
-        android:id="@+id/textView21"
-        android:layout_centerVertical="true"
-        android:layout_alignRight="@+id/textView20"
-        android:layout_alignEnd="@+id/textView20" />
+        android:text="Simmulate"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
-    <TextView
+    <Switch
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="AWGN"
-        android:id="@+id/textView22"
+        android:id="@+id/switch1"
+        android:checked="false"
         android:layout_centerVertical="true"
         android:layout_alignRight="@+id/textView15"
         android:layout_alignEnd="@+id/textView15" />
 
-    <TextView
+    <Switch
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Rician with k:"
+        android:id="@+id/switch2"
+        android:checked="false"
+        android:layout_above="@+id/textView17"
+        android:layout_alignRight="@+id/textView19"
+        android:layout_alignEnd="@+id/textView19" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Optimum"
-        android:id="@+id/textView23"
-        android:layout_marginTop="30dp"
-        android:layout_below="@+id/textView17"
-        android:layout_alignRight="@+id/textView22"
-        android:layout_alignEnd="@+id/textView22" />
+        android:id="@+id/switch3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false"
+        android:layout_below="@+id/textView17" />
 
-    <TextView
+    <Switch
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Uniform"
-        android:id="@+id/textView24"
-        android:layout_alignBottom="@+id/textView23"
-        android:layout_alignRight="@+id/textView20"
-        android:layout_alignEnd="@+id/textView20" />
+        android:id="@+id/switch4"
+        android:layout_alignTop="@+id/switch3"
+        android:layout_alignLeft="@+id/switch2"
+        android:layout_alignStart="@+id/switch2"
+        android:checked="false" />
 
-    <Button
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Submit"
-        android:id="@+id/button"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/editText"
+        android:layout_alignTop="@+id/textView13"
+        android:layout_toRightOf="@+id/textView13"
+        android:layout_toEndOf="@+id/textView13" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:layout_above="@+id/editText4"
+        android:layout_alignLeft="@+id/editText4"
+        android:layout_alignStart="@+id/editText4" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText4"
+        android:layout_alignBaseline="@+id/textView19"
+        android:layout_alignBottom="@+id/textView19"
+        android:layout_toRightOf="@+id/textView19"
+        android:layout_toEndOf="@+id/textView19" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText3"
+        android:layout_alignTop="@+id/switch2"
+        android:layout_toRightOf="@+id/textView20"
+        android:layout_toEndOf="@+id/textView20" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText5"
+        android:layout_below="@+id/editText2"
+        android:layout_alignRight="@+id/switch3"
+        android:layout_alignEnd="@+id/switch3" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText6"
+        android:layout_below="@+id/editText5"
+        android:layout_toRightOf="@+id/textView20"
+        android:layout_toEndOf="@+id/textView20" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText7"
+        android:layout_alignTop="@+id/textView15"
+        android:layout_toRightOf="@+id/textView15"
+        android:layout_toEndOf="@+id/textView15" />
 
 </RelativeLayout>
