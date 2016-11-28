@@ -18,6 +18,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Sensor"
+            android:label="@string/title_activity_sensor"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".data"
+            android:label="@string/title_activity_data"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".graph"
+            android:label="@string/title_activity_graph"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

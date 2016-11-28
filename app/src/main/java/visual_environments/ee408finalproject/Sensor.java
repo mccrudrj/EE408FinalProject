@@ -7,22 +7,21 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class Sensor extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_sensor);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
 
     }
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -40,17 +39,22 @@ public class MainActivity extends AppCompatActivity {
         final Context context = this;
         //noinspection SimplifiableIfStatement
         if (id == R.id.settings) {
-            return true;
-        }
-        else if(id == R.id.sensor){
-            intent = new Intent(context, Sensor.class);
+            intent = new Intent(context, MainActivity.class);
             startActivity(intent);
             return true;
         }
+        else if(id == R.id.sensor){
+
+            return true;
+        }
         else if(id == R.id.data){
+            intent = new Intent(context, data.class);
+            startActivity(intent);
             return true;
         }
         else if(id == R.id.graph){
+            intent = new Intent(context, graph.class);
+            startActivity(intent);
             return true;
         }
 
