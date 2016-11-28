@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
         else if(id == R.id.sensor){
-            intent = new Intent(context, Sensor.class);
+            intent = new Intent(context, Sensor_page.class);
             startActivity(intent);
             return true;
         }
